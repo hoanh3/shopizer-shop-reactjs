@@ -1,8 +1,8 @@
 const Constant = {
     ACTION: {
         STORE: 'store/',
-        DEFAULT: 'DEFAULT/',
         CATEGORY: 'category/',
+        DEFAULT: 'hoantc/',
         CONTENT: 'content/',
         PAGES: 'pages/',
         PRODUCT_GROUP: 'products/group/',
@@ -12,7 +12,8 @@ const Constant = {
         CARTS: 'cart',
         PRICE: 'price/',
         CUSTOMER: 'customer/',
-        LOGIN: 'login/',
+        USER: 'private/',
+        LOGIN: 'login',
         CUSTOMERS: 'customers/',
         MANUFACTURERS: 'manufacturers/',
         VARIANTS: 'variants/',

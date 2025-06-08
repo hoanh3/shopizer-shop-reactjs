@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import Layout from "../../layouts/Layout";
 import HeroSlider from "../../wrappers/hero-slider/HeroSlider";
 import TabProduct from "../../wrappers/product/TabProduct";
-// import FeatureIcon from "../../wrappers/feature-icon/FeatureIcon";
+import FeatureIcon from "../../wrappers/feature-icon/FeatureIcon";
 import Promo from "../../wrappers/promos/Promos";
 import Newsletter from "../../wrappers/newsletter/Newsletter";
 import { multilanguage } from "redux-multilanguage";
@@ -13,10 +13,10 @@ const Home = ({ merchant, strings }) => {
     <Fragment>
       <MetaTags>
         <title>{merchant.name}</title>
-        {/* <meta
+        <meta
           name="description"
           content="Fashion home of flone react minimalist eCommerce template."
-        /> */}
+        />
       </MetaTags>
       <Layout
         headerContainerClass="container-fluid"
@@ -40,7 +40,7 @@ const Home = ({ merchant, strings }) => {
           spaceBottomClass="pb-100"
           spaceTopClass="pt-100"
         />
-        {/* feature icon 
+        {/* feature icon  */}
         <FeatureIcon
           bgImg="/assets/img/bg/shape.png"
           containerClass="container-fluid"
@@ -48,7 +48,7 @@ const Home = ({ merchant, strings }) => {
           spaceTopClass="pt-50"
           spaceBottomClass="pb-40"
         />
-        */}
+       
         {/* newsletter */}
         <Newsletter
           spaceTopClass="pt-100"

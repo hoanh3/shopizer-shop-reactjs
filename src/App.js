@@ -6,6 +6,7 @@ import { ToastProvider } from "react-toast-notifications";
 import { multilanguage, loadLanguages } from "redux-multilanguage";
 import { connect } from "react-redux";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
+import AdminRoutes from "./pages/admin/AdminRoutes";
 
 import Loader from "./components/loader/loader"
 import Cookie from "./components/consent/Cookie"
@@ -67,7 +68,8 @@ const App = (props) => {
       loadLanguages({
         languages: { //from merchant supported languages
           en: require("./translations/english.json"),
-          fr: require("./translations/french.json")
+          fr: require("./translations/french.json"),
+          vi: require("./translations/vietnam.json")
         }
       })
     );
@@ -97,6 +99,8 @@ const App = (props) => {
                   path="/"
                   component={Home}
                 />
+                
+                <Route path="/admin" component={AdminRoutes} />
 
                 {/* Homepages */}
 

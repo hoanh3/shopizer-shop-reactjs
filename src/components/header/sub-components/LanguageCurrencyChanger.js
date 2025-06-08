@@ -22,15 +22,16 @@ const LanguageCurrencyChanger = ({
   //   setCurrency(currencyName);
   // };
 
+  console.log(currentLanguageCode);
+
   return (
     <div className="language-currency-wrap">
       <div className="same-language-currency language-style">
         <span>
-          {currentLanguageCode === "en"
-            ? strings["en"]
-            : currentLanguageCode === "fr"
-              ? strings["fr"]
-
+          {currentLanguageCode === "vi"
+            ? strings["vi"]
+            : currentLanguageCode === "en"
+              ? strings["en"]
               : ""}{" "}
           <i className="fa fa-angle-down" />
         </span>

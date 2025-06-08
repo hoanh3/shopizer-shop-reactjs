@@ -10,6 +10,13 @@ const FooterCopyright = ({ footerLogo, spaceBottomClass, colorClass, merchant })
       className={`copyright ${spaceBottomClass ? spaceBottomClass : ""} ${
         colorClass ? colorClass : ""
         }`}
+        style={{
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    textAlign: "center"
+  }}
     >
       <div className="footer-logo">
         {
